@@ -1,0 +1,29 @@
+---
+apiVersion: crd.k8s.amazonaws.com/v1alpha1
+kind: ENIConfig
+metadata: 
+  name: custom-ap-southeast-1a
+spec: 
+  securityGroups: 
+    - sg-01e84b3037216d845
+  subnet: subnet-0e6517340c4ae37bd
+
+---
+apiVersion: crd.k8s.amazonaws.com/v1alpha1
+kind: ENIConfig
+metadata: 
+  name: custom-ap-southeast-1b
+spec: 
+  securityGroups: 
+    - sg-01e84b3037216d845
+  subnet: subnet-0f17f0f03a1ee31be
+
+---
+apiVersion: crd.k8s.amazonaws.com/v1alpha1
+kind: ENIConfig
+metadata: 
+  name: custom-ap-southeast-1c
+spec: 
+  securityGroups: 
+    - sg-01e84b3037216d845
+  subnet: subnet-0fb4100170023d155
